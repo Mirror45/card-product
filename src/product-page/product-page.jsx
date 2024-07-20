@@ -7,6 +7,8 @@ import Counter from "../counter/counter";
 import Description from "../description/description";
 import Comments from "../comments/comments";
 import Popularity from "../popularity/popularity";
+import Button from "/src/button/button";
+
 
 function ProductPage({ product }) {
   return (
@@ -26,7 +28,7 @@ function ProductPage({ product }) {
           <p>
             <span>Доставка:</span> {product.delivery}
           </p>
-          <button type="button">Купить</button>
+          <Button size="large">Купить</Button>
           <Popularity count={product.comments.length} />
         </div>
       </div>

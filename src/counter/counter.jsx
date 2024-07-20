@@ -1,12 +1,14 @@
 import React from "react";
+import Button from "/src/button/button";
+import { StyledCounter, Value } from "./styled";
 
 function Counter() {
   return (
-    <React.Fragment>
-      <button type="button">-</button>
-      <span>1</span>
-      <button type="button">+</button>
-    </React.Fragment>
+    <StyledCounter>
+      <Button size="small">-</Button>
+      <Value>1</Value>
+      <Button size="small">+</Button>
+    </StyledCounter>
   );
 }
 
