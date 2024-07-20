@@ -1,7 +1,8 @@
 import React from "react";
+import { StyledOldPrice } from "./styled";
 
 function OldPrice({ value }) {
-  return <del>{ value } ₽</del>;
+  return <StyledOldPrice>{ value } ₽</StyledOldPrice>;
 }
 
 export default OldPrice;

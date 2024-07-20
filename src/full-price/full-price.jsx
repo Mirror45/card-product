@@ -1,16 +1,16 @@
 import React from "react";
-import Price from "../price/price";
-import OldPrice from "../old-price/old-price";
+import { InnerPrice, PriceWrapper } from "./styled";
+import OldPrice from "/src/old-price/old-price";
 
 function FullPrice({ price, oldPrice }) {
   const showOldPrice = oldPrice && price < oldPrice;
 
   return (
-    <React.Fragment>
+    <PriceWrapper>
       {showOldPrice && <OldPrice value={oldPrice} />}
       {showOldPrice && " "}
-      <Price value={price} />
-    </React.Fragment>
+      <InnerPrice value={price} />
+    </PriceWrapper>
   );
 }
 
