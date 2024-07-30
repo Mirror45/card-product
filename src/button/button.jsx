@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Button = styled.button`
   padding: 0;
@@ -12,7 +12,7 @@ const Button = styled.button`
   ${(props) => {
     const theme = props.theme.button[props.size || "medium"];
 
-    return `
+    return css`
       height: ${theme.height};
       padding-left: ${theme.padding};
       padding-right: ${theme.padding};
