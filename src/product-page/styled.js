@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { P } from "/src/elements";
 import Button from "/src/button/button";
 import Counter from "/src/counter/counter";
 import FullPrice from "/src/full-price/full-price";
 
-const valueStyle = `
+const valueStyle = css`
   display: inline-flex;
-  margin-left: 20px;
-  color: #333;
+  margin-left: ${(props) => props.theme.indent};
+  color: ${(props) => props.theme.textColor};
 `;
 
 export const StyledProductPage = styled.article`
