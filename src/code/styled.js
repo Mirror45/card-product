@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledCode = styled.span`
-  color: #888;
+  color: ${(props) => props.theme.textColorMuted};
   font-size: 12px;
 `;
 

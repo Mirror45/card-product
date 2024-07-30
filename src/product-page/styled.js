@@ -11,29 +11,29 @@ const valueStyle = `
 `;
 
 export const StyledProductPage = styled.article`
-  margin: 20px;
-  padding: 20px;
+  margin: ${(props) => props.theme.indent};
+  padding: ${(props) => props.theme.indent};
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  font-family: 'Arial, "Helvetica", sans-serif';
+  font-family: ${(props) => props.theme.font};
   font-size: 16px;
-  color: #333;
+  color: ${(props) => props.theme.textColor};
 `;
 
 export const Header = styled.header`
-  margin-bottom: 20px;
+  margin-bottom: ${(props) => props.theme.indent};
 `;
 
 export const ProductWrapper = styled.section`
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: ${(props) => props.theme.indent};
 `;
 
 export const ProductInfo = styled.div`
-  margin-left: 20px;
+  margin-left: ${(props) => props.theme.indent};
   border-left: 1px solid #888;
   box-sizing: border-box;
-  padding-left: 20px;
-  margin-bottom: 20px;
+  padding-left: ${(props) => props.theme.indent};
+  margin-bottom: ${(props) => props.theme.indent};
 `;
 
 export const ProductInfoLine = styled(P)`
