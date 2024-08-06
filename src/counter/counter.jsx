@@ -2,12 +2,29 @@ import React from "react";
 import Button from "/src/button/button";
 import { StyledCounter, Value } from "./styled";
 
-function Counter() {
+function Counter({ className, value, onChange, minValue }) {
+  const isDisabledMinus = value === minValue;
+
   return (
-    <StyledCounter>
-      <Button size="small">-</Button>
-      <Value>1</Value>
-      <Button size="small">+</Button>
+    <StyledCounter className={className}>
+      <Button
+        disabled={isDisabledMinus}
+        size="small"
+        onClick={() => onChange && onChange(value - 1)}
+      >
+        -
+      </Button>
+      <Value
+        value={value}
+        size={1}
+        onChange={(e) => {
+          const value = Number(e.target.value);
+          onChange(value < minValue ? minValue : value);
+        }}
+      />
+      <Button size="small" onClick={() => onChange && onChange(value + 1)}>
+        +
+      </Button>
     </StyledCounter>
   );
 }
