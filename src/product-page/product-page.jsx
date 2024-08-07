@@ -8,6 +8,7 @@ import { Image } from "/src/elements";
 import Tabs from "/src/tabs/tabs";
 import PopUp from "/src/popup/popup";
 import Order from "/src/order/order";
+import Accordion from "/src/accordion/accordion";
 import {
   StyledProductPage,
   Header,
@@ -21,7 +22,7 @@ import {
 } from "./styled";
 
 
-function ProductPage({ product }) {
+function ProductPage({ product, showInfoInAccordion }) {
   const [productCount, setProductCount] = useState(1);
   const [isShowPopup, setIsShowPopup] = useState(false);
   const price = product.price * productCount;
@@ -69,7 +70,7 @@ function ProductPage({ product }) {
           <Popularity count={product.comments.length} />
         </ProductInfo>
       </ProductWrapper>
-      <Tabs tabs={tabs} tabIndex={1} />
+      {showInfoInAccordion ? <Accordion items={tabs} /> : <Tabs tabs={tabs} />}
       <PopUp
         isShow={isShowPopup}
         onClose={() => setIsShowPopup(false)}
