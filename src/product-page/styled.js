@@ -11,6 +11,7 @@ const valueStyle = css`
 `;
 
 export const StyledProductPage = styled.article`
+  width: 600px;
   margin: ${(props) => props.theme.indent};
   padding: ${(props) => props.theme.indent};
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -42,11 +43,11 @@ export const ProductInfoLine = styled(P)`
   margin-bottom: 20px;
 `;
 
-export const PageFullPrice = styled(FullPrice)`
+export const PageCounter = styled(Counter)`
   ${valueStyle}
 `;
 
-export const PageCounter = styled(Counter)`
+export const PageFullPrice = styled(FullPrice)`
   ${valueStyle}
 `;
 
