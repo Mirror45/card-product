@@ -1,11 +1,13 @@
 import React from "react";
 import { DescriptionButton } from "./styled";
 
-function Description({ text }) {
+function Description({ text, onShowMore, isShowAllDescription }) {
   return (
     <>
       {text}
-      <DescriptionButton>Подробнее</DescriptionButton>
+      <DescriptionButton onClick={onShowMore}>
+        {isShowAllDescription ? "Cкрыть" : "Подробнее"}
+      </DescriptionButton>
     </>
   );
 }

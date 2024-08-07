@@ -5,9 +5,11 @@ function Accordion({ items }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [height, setHeight] = useState(0);
   const openContent = useRef(null);
+
   useEffect(() => {
     setHeight(openContent.current.offsetHeight);
-  }, [height, activeIndex]);
+  }, [height, activeIndex, items]);
+
   return (
     <div>
       {items &&
