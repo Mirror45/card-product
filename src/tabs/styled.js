@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Title from "../title/title";
+import Title from "/src/title/title";
 
 export const TitleList = styled.div`
   display: inline-flex;
@@ -22,7 +22,7 @@ export const TitleButton = styled.button`
 `;
 
 export const TitleText = styled(Title)`
-    color: ${(props) =>
+  color: ${(props) =>
     props.active ? props.theme.textColor : props.theme.textColorMuted};
 `;
 

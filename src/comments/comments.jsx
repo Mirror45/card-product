@@ -1,20 +1,21 @@
 import React from "react";
-import Button from "/src/button/button";
+
+import { Ul } from "/src/elements";
+import { CoomentsLi, CoomentsButton, Name, Text } from "./styled";
 
 function Comments({ comments }) {
   return (
-    <div>
-      <h2>Комментарии</h2>
-      <ul>
+    <>
+      <Ul>
         {comments.map((comment) => (
-          <li key={comment.id}>
-            <b>{comment.author}</b>
-            <p>{comment.text}</p>
-          </li>
+          <CoomentsLi key={comment.id}>
+            <Name>{comment.author}</Name>
+            <Text>{comment.text}</Text>
+          </CoomentsLi>
         ))}
-      </ul>
-      <Button>Показать ещё</Button>
-    </div>
+      </Ul>
+      <CoomentsButton>Показать ещё</CoomentsButton>
+    </>
   );
 }
 

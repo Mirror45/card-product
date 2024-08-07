@@ -1,13 +1,12 @@
 import React from "react";
-import Button from "/src/button/button";
+import { DescriptionButton } from "./styled";
 
 function Description({ text }) {
   return (
-    <div>
-      <h2>Описание</h2>
-      { text }
-      <Button>Подробнее</Button>
-    </div>
+    <>
+      {text}
+      <DescriptionButton>Подробнее</DescriptionButton>
+    </>
   );
 }
 
