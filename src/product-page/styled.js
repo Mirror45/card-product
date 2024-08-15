@@ -18,6 +18,7 @@ export const StyledProductPage = styled.article`
   font-family: ${(props) => props.theme.font};
   font-size: 16px;
   color: ${(props) => props.theme.textColor};
+  margin: 0 auto;
 `;
 
 export const Header = styled.header`

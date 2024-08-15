@@ -22,7 +22,6 @@ import {
   DeliveryValue
 } from "./styled";
 
-
 const MAX_TEXT_SIZE = 200;
 const COMMENTS_COUNT = 3;
 
