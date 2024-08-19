@@ -7,7 +7,7 @@ export const StyledSider = styled(Swiper)`
   height: 257px;
   margin-left: 30px;
   margin-right: 30px;
-  z-index: 5;
+  z-index: 0;
 `;
 
 export const SlyderWrapper = styled.div`
@@ -16,7 +16,7 @@ export const SlyderWrapper = styled.div`
 
 export const StyledButton = styled(Button)`
   position: absolute;
-  z-index: 10;
+  z-index: 0;
   top: 0;
   bottom: 0;
   margin: auto;
