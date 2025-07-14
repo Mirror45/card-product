@@ -1,44 +1,55 @@
-# Проект «Card-product»
+# 🛒 Card Product
 
+**Card Product** is a single-page application (SPA) for an online store where users can browse, view, and purchase products. The project demonstrates a full shopping flow with a product catalog, detailed product pages, an image gallery, and a modal-based checkout form.
 
-## О проекте
+## 🗂️ About the Project
 
-«Card-product» - это SPA приложение для покупки товаров.
-- Страница каталога, на которой можно выбрать нужный товар.
-- Страница товара, на которой имеется галерея, реализована с помощью Swiper, выбор кол-ва товара для покупки, описание и комментарии реализованные с помощью accordion.
-- При нажатии на кнопку «Купить» открывается окно в котором можно указать свои данные.
+The application includes:
 
-### Типовые задачи, которые пришлось решить во время разработки:
+- 📦 **Product Catalog** — a list of available items with selection options  
+- 🧾 **Product Page** — image gallery (Swiper), description, reviews (accordion), and quantity selector  
+- 🛍️ **Checkout Modal** — a form popup triggered by the "Buy" button  
+- ⚙️ **SPA Architecture** — built with React Router for smooth navigation  
 
-- Проект являеться Single Page Application (SPA).
-- Создание React-компонентов  на JSX.
-- Стилизация компонентов на CSS-in-JS с использованием Styled-components.
-- Создание интерактивных компонентов.
-- Настройка роутинга для перехода между страницами.
-- Сборка Storybook.
+Key challenges solved during development:
 
-## Установка 🛠
+- Building UI components with **JSX**  
+- Styling via **Styled Components** (CSS-in-JS)  
+- Creating interactive components like gallery, modal, and accordion  
+- Setting up **client-side routing** with React Router DOM  
+- Customizing CRA with **react-app-rewired**  
 
-1. Сначала требуется склонировать проект на ваш пк
+> ⚠️ Responsive layout is **not implemented** — the project is optimized for desktop only.
 
-```
-  git clone git@github.com:Mirror45/card-product.git
-```
+---
 
-2. Переходим в только что склонированный репозиторий
+## 🛠 Tech Stack
 
-```
- cd card-product
-```
+### 🚀 Core Technologies
 
-3. Устанавливаем все зависимости
+| Technology               | Purpose                                         |
+|--------------------------|-------------------------------------------------|
+| **React**                | Building the UI and SPA structure               |
+| **React Router DOM v6**  | Client-side routing and navigation              |
+| **Styled Components**    | Scoped CSS using CSS-in-JS                      |
+| **Swiper.js**            | Image gallery and slider                        |
+| **React App Rewired**    | Customize CRA without ejecting                  |
+| **Customize CRA**        | Extend CRA’s Webpack configuration              |
 
-```
- npm i
-```
+---
 
-4. Запускаем проект на локальном хосте
+## 🚀 Getting Started
 
-```
- npm start
+```bash
+# Clone the repository
+git clone git@github.com:Mirror45/card-product.git
+
+# Navigate into the project directory
+cd card-product
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
 ```
