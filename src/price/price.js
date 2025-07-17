@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Price = styled.span.attrs((props) => ({
-  children: `${props.value} ₽`
+  children: `${props.value} $`
 }))`
   font-size: 28px;
   font-weight: bold;

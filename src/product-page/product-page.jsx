@@ -35,7 +35,7 @@ function ProductPage({ product, showInfoInAccordion }) {
 
   const tabs = [
     {
-      title: "Описание",
+      title: "Description",
       content: (
         <Description
           text={
@@ -49,7 +49,7 @@ function ProductPage({ product, showInfoInAccordion }) {
       )
     },
     {
-      title: "Комментарии",
+      title: "Comments",
       content: (
         <Comments
           comments={product.comments.slice(0, commentsShow)}
@@ -70,18 +70,18 @@ function ProductPage({ product, showInfoInAccordion }) {
         <Slider images={product.images} />
         <ProductInfo>
           <ProductInfoLine>
-            Цена:{" "}
+            Price:{" "}
             <PageFullPrice oldPrice={oldPrice} price={price} />
           </ProductInfoLine>
           <ProductInfoLine>
-            Количество:{" "}
+            Quantity:{" "}
             <PageCounter value={productCount} onChange={setProductCount} minValue={1} />
           </ProductInfoLine>
           <ProductInfoLine>
-            <span>Доставка:</span>{" "}
+            <span>Delivery:</span>{" "}
             <DeliveryValue>{product.delivery}</DeliveryValue>
           </ProductInfoLine>
-          <BuyButton size="large" onClick={() => setIsShowPopup(true)}>Купить</BuyButton>
+          <BuyButton size="large" onClick={() => setIsShowPopup(true)}>Buy</BuyButton>
           <Popularity count={product.comments.length} />
         </ProductInfo>
       </ProductWrapper>
@@ -89,7 +89,7 @@ function ProductPage({ product, showInfoInAccordion }) {
       <PopUp
         isShow={isShowPopup}
         onClose={() => setIsShowPopup(false)}
-        title="Оформление"
+        title="Checkout"
       >
         <Order />
       </PopUp>

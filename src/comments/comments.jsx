@@ -15,7 +15,7 @@ function Comments({ comments, onShowMore, allCommentsLenght }) {
         ))}
       </Ul>
       {allCommentsLenght > comments.length && (
-        <CoomentsButton onClick={onShowMore}>Показать ещё</CoomentsButton>
+        <CoomentsButton onClick={onShowMore}>Load more</CoomentsButton>
       )}
     </>
   );

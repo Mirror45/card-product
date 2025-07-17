@@ -12,10 +12,10 @@ function Slider({ images }) {
 
   return (
     <SlyderWrapper>
-      <StyledButton left ref={navigationPrevRef} title="Назад">
+      <StyledButton left ref={navigationPrevRef} title="Back">
         &lt;
       </StyledButton>
-      <StyledButton right ref={navigationNextRef} title="Вперёд">
+      <StyledButton right ref={navigationNextRef} title="Next">
         &gt;
       </StyledButton>
       <StyledSider
@@ -39,7 +39,7 @@ function Slider({ images }) {
             <SwiperSlide key={image}>
               <Image
                 src={image}
-                alt="изображение продукта"
+                alt="Product image"
                 width="200"
                 height="257"
                 maxWidth="200"

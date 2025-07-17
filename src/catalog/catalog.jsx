@@ -7,7 +7,7 @@ import { List, ListItem, StyledLink } from "./styled";
 export default function Catalog({ products }) {
   return (
     <>
-      <Title>Каталог</Title>
+      <Title>Catalog</Title>
       <List>
         {products &&
           products.length &&

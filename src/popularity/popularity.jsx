@@ -4,11 +4,11 @@ function Popularity({ count }) {
   let result = null;
 
   if (count === 0) {
-    result = <p>Будь первым. Поделись впечатлениями</p>;
+    result = <p>Be the first. Share your feedback</p>;
   }
 
   if (count > 4) {
-    result = <p style={{ color: "green" }}>Проверенный товар</p>;
+    result = <p style={{ color: "green" }}>Verified product</p>;
   }
   return result;
 }
