@@ -6,7 +6,7 @@ function Description({ text, onShowMore, isShowAllDescription }) {
     <>
       {text}
       <DescriptionButton onClick={onShowMore}>
-        {isShowAllDescription ? "Cкрыть" : "Подробнее"}
+        {isShowAllDescription ? "Hide" : "More details"}
       </DescriptionButton>
     </>
   );

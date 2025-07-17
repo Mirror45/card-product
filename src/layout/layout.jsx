@@ -6,7 +6,7 @@ export default function Layout() {
   return (
     <Wrapper>
       <Nav>
-        <NavLink to="/">Каталог</NavLink>
+        <NavLink to="/">Catalog</NavLink>
       </Nav>
       <main>
         <Outlet />

@@ -11,7 +11,7 @@ function ProducrOr404({ products }) {
   return product ? (
     <ProductPage product={product} />
   ) : (
-    <h1>404 страница не найдена</h1>
+    <h1>404 Page Not Found</h1>
   );
 }
 

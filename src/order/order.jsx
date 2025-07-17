@@ -13,7 +13,7 @@ function Order() {
   return (
     <form>
       <Label>
-        Имя:{" "}
+        Name:{" "}
         <input
           name="name"
           value={name}
@@ -21,7 +21,7 @@ function Order() {
         />
       </Label>
       <Label>
-        Телефон:{" "}
+        Phone:{" "}
         <input
           name="phone"
           type="tel"
@@ -30,7 +30,7 @@ function Order() {
         />
       </Label>
       <Label>
-        Адрес доставки:{" "}
+        Delivery Address:{" "}
         <input
           name="address"
           value={address}
@@ -42,11 +42,11 @@ function Order() {
         onClick={(evt) => {
           evt.preventDefault();
           console.log(
-            `${name}, спасибо за заказ. Мы доставим его как можно скорее по адресу: ${address}`
+            `${name}, Thank you for your order. We will deliver it as soon as possible to the address provided.: ${address}`
           );
         }}
       >
-        Оформить
+        Place Order
       </Button>
     </form>
   );
